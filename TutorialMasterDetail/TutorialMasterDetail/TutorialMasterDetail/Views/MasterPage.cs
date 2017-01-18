@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using TutorialMasterDetail.Menu;
+using TutorialMasterDetail.Model;
 using Xamarin.Forms;
 
 namespace TutorialMasterDetail.Views
@@ -14,14 +15,14 @@ namespace TutorialMasterDetail.Views
             objMenuPage = new MenuPage();
             
             objMenuPage.lstMenuItem.ItemSelected += (object sender, SelectedItemChangedEventArgs e) => {
-                NavigateTo(e.SelectedItem as ItemMenuModel);
+                NavigateTo(e.SelectedItem as ItemMenu);
             };
 
             Master = objMenuPage;
             Detail = new NavigationPage(new FirstPage()) {};
         }
         
-		private void NavigateTo (ItemMenuModel objItemMenu)
+		private void NavigateTo (ItemMenu objItemMenu)
 		{
 			Page objPageDisplay;
 

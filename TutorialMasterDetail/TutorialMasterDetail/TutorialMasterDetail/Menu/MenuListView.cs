@@ -9,7 +9,6 @@ namespace TutorialMasterDetail.Menu
 {
 	public class MenuListView : ListView
 	{
-		#region Métodos
 		public MenuListView ()
 		{
 			try
@@ -67,7 +66,6 @@ namespace TutorialMasterDetail.Menu
 
 			return lstItemMenu;
 		}
-		#endregion
 	}
 }
 
