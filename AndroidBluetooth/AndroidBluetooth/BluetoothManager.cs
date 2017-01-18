@@ -8,7 +8,6 @@ namespace AndroidBluetooth
     class BluetoothManager
     {
         private string UUIDUniversal = "00001101-0000-1000-8000-00805F9B34FB";
-        private BluetoothDevice objResult;
         private BluetoothSocket objSocket;
         private BufferedReader objReader;
 

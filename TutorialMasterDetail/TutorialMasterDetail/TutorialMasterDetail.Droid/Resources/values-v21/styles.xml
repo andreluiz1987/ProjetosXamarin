@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <style name="MainTheme" parent="MainTheme.Base">
+  </style>
+  <!-- Base theme applied no matter what API -->
+  <style name="MainTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:colorPrimary">#E56F17</item>
+    <!-- Valor padrão para o ActionBarBackground -->
+    <item name="android:colorPrimaryDark">#EB8A2C</item>
+    <!-- Valor padrão para o StatusBar -->
+    <item name="android:colorAccent">#FF5722</item>
+    <!-- Valor padrão para o ColorControlActivated (definir as cores dos widgets) -->
+    <item name="android:colorControlNormal">#BEBEBE</item>
+    <item name="android:colorActivatedHighlight">#000000</item>
+    <item name="android:textColorHint">#707070</item>
+    <!-- Customizar o AlertDialog -->
+  </style>
+
+  <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+    <item name="colorAccent">#FF4081</item>
+  </style>
+</resources>
