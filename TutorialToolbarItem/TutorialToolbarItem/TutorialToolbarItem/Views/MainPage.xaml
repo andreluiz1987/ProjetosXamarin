@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorialToolbarItem.Views.MainPage"
+             Title="App">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Botão 1" Clicked="OnClickButtonOne" Order="Secondary" />
+    <ToolbarItem Text="Botão 2" Clicked="OnClickButtonTwo" Order="Secondary" />
+    <ToolbarItem Text="Botão 3" Clicked="OnClickButtonThree" Order="Primary" Icon="search.png" />
+  </ContentPage.ToolbarItems>
+  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  
+</ContentPage>
