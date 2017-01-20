@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorialListviewCell.Views.MainPage" Title="App">
+<ContentPage.Content>
+		<ListView  x:Name="lstViewAnimal" RowHeight="90">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Padding="10">
+							<Image Source="{Binding Image}" HorizontalOptions="Start" />
+                <StackLayout Orientation="Vertical" Padding="10,5,5,10">
+								<Label Text = "{Binding Name}" FontSize="15" FontAttributes="Bold" />
+								<Label Text = "{Binding Family}" />
+							  </StackLayout>							
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</ContentPage.Content>
+</ContentPage>
