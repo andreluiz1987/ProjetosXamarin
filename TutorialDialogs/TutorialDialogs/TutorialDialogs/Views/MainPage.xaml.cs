@@ -64,7 +64,7 @@ namespace TutorialDialogs.Views
 
             for (var i = 0; i < lstImage.Count; i++)
             {
-                var strOption = lstImage[i - 1].Replace(".png", "");
+                var strOption = lstImage[i].Replace(".png", "");
                 var objBitmapLoader = BitmapLoader.Current.LoadFromResource(lstImage[i], null, null).Result;
 
                 objActionSheetConfig.Add(
