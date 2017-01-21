@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorialDialogs.Views.MainPage" Title="Dialogs">
+  <ContentPage.Content>
+    <StackLayout Spacing="10">
+      <Button x:Name="btnToast" Text="TOAST" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="150" />
+      <Button x:Name="btnLoading" Text="LOADING" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="150"/>
+      <Button x:Name="btnLoadingProgress" Text="LOADING PROGRESS" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="150" />
+      <Button x:Name="btnActionSheet" Text="ACTION SHEET" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="150" />
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
