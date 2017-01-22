@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TutorialListviewCell.Views.MainPage" Title="App">
 <ContentPage.Content>
-		<ListView  x:Name="lstViewAnimal" RowHeight="90">
+		<ListView  x:Name="lstViewAnimal" RowHeight="90" IsPullToRefreshEnabled="True" >
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<ViewCell>

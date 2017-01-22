@@ -28,6 +28,16 @@ namespace TutorialListviewCell.Views
             lstViewAnimal.ItemsSource = lstAnimal;
 
             lstViewAnimal.ItemSelected += AnimalItemSelected;
+            lstViewAnimal.Refreshing += LstViewAnimal_Refreshing;
+        }
+
+        private async void LstViewAnimal_Refreshing(object sender, EventArgs e)
+        {
+            await Task.Delay(2000);
+
+            lstAnimal.Insert(0, new Animal { Name = "Random " +  new Random().Next(0,50).ToString(), Family = "Família: " + new Random().Next(0, 50).ToString(), Image = "icon.png" });
+
+            lstViewAnimal.IsRefreshing = false;
         }
 
         private void AnimalItemSelected(object sender, SelectedItemChangedEventArgs e)
