@@ -11,11 +11,13 @@ namespace TutorialListviewCell.Views
 {
     public partial class MainPage : ContentPage
     {
+        ObservableCollection<Animal> lstAnimal;
+
         public MainPage()
         {
             InitializeComponent();
 
-            var lstAnimal = new ObservableCollection<Animal>();
+            lstAnimal = new ObservableCollection<Animal>();
 
             lstAnimal.Add(new Animal { Name = "Leão", Family = "Família: Felidae", Image = "leao.png" });
             lstAnimal.Add(new Animal { Name = "Girafa", Family = "Família: Giraffidae", Image = "girafa.png" });
@@ -39,6 +41,21 @@ namespace TutorialListviewCell.Views
 
                 Navigation.PushAsync(new PageDetail(objAnimal));
             }
+        }
+
+        public void OnInfo(object sender, EventArgs e)
+        {
+            var objMenu = ((MenuItem)sender);
+            var objAnimal = (Animal)objMenu.CommandParameter;
+            DisplayAlert("Context Action", objAnimal.Name + " selecionado.", "OK");
+        }
+
+        public void OnDelete(object sender, EventArgs e)
+        {
+            var objMenu = ((MenuItem)sender);
+            var objAnimal = (Animal)objMenu.CommandParameter;
+            lstAnimal.Remove(objAnimal);
+            DisplayAlert("Context Action", objAnimal.Name + " deletado.", "OK");
         }
     }
 }

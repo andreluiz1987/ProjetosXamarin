@@ -7,6 +7,12 @@
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<ViewCell>
+            <ViewCell.ContextActions>
+              <MenuItem Clicked="OnInfo" CommandParameter="{Binding .}"
+                 Text="Info" />
+              <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}"
+                 Text="Deletar" IsDestructive="True" />
+            </ViewCell.ContextActions>
 						<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Padding="10">
 							<Image Source="{Binding Image}" HorizontalOptions="Start" />
                 <StackLayout Orientation="Vertical" Padding="10,5,5,10">

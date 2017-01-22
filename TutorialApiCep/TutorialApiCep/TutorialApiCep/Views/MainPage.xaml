@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorialApiCep.Views.MainPage">
+  <ContentPage.Content>
+    <StackLayout>
+      <Button Text="BUSCAR" Command="{Binding BuscarCommand}" VerticalOptions="Center" HorizontalOptions="Center" />
+      <ListView RowHeight="90" ItemsSource="{Binding ocItens}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Padding="10">
+                <Image Source="{Binding weather[0].icon}" HorizontalOptions="Start" />
+                <StackLayout Orientation="Vertical" Padding="10,5,5,10">
+                  <Label Text = "{Binding name}" FontSize="15" FontAttributes="Bold" />
+                  <Label Text = "{Binding main.temp, StringFormat={0}°C}" />
+                  <Label Text = "{Binding weather[0].description}" />
+                </StackLayout>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
