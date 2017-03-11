@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorialListviewCell.Views.GridPage">
+  <Grid RowSpacing="0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="60" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <StackLayout BackgroundColor="Blue" Text="Bottom Right" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
+    <StackLayout BackgroundColor="Red" Text="Bottom Right" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" />
+  </Grid>
+</ContentPage>

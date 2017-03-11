@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMaratona.View.Page">
+  <ContentPage.Content>
+    <StackLayout Padding="20">
+      <Entry Text="{Binding Password}" Placeholder="Digite aqui"></Entry>
+			<Button Text="Adicionar" Command="{Binding AddCommand}"></Button>
+      <ListView  x:Name="lstViewAnimal" RowHeight="90" IsPullToRefreshEnabled="True" 
+         RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsBusy}" ItemsSource="{Binding ListContacts}" >
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Padding="10">
+                <Image Source="icon.png" HorizontalOptions="Start" />
+                <StackLayout Orientation="Vertical" Padding="10,10,5,10">
+                  <Label Text = "{Binding Name}" FontSize="15" FontAttributes="Bold" />
+                  <Label Text = "{Binding Code}" />
+                </StackLayout>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    <Button Text="Atualizar lista" Command="{Binding UpdateCommand}"></Button>
+    </StackLayout>
+
+  </ContentPage.Content>
+</ContentPage>

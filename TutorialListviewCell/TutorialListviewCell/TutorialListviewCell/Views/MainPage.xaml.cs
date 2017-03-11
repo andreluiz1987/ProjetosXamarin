@@ -25,10 +25,18 @@ namespace TutorialListviewCell.Views
             lstAnimal.Add(new Animal { Name = "Zebra", Family = "Família:	Equidae", Image = "zebra.png" });
             lstAnimal.Add(new Animal { Name = "Macaco-prego", Family = "Família: Cebidae", Image = "macaco.png" });
 
+
+            lstAnimal.Add(new Animal { Name = "Random 1", Family = "Família: Random 1", Image = "icon.png" });
+            lstAnimal.Add(new Animal { Name = "Random 2", Family = "Família: Random 2", Image = "icon.png" });
+            lstAnimal.Add(new Animal { Name = "Random 3", Family = "Família: Random 3", Image = "icon.png" });
+
             lstViewAnimal.ItemsSource = lstAnimal;
 
             lstViewAnimal.ItemSelected += AnimalItemSelected;
             lstViewAnimal.Refreshing += LstViewAnimal_Refreshing;
+
+            this.BindingContext = new MainPageViewModel();
+            
         }
 
         private async void LstViewAnimal_Refreshing(object sender, EventArgs e)

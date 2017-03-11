@@ -1,9 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TutorialListviewCell.Views.MainPage" Title="App">
+             x:Class="TutorialListviewCell.Views.MainPage" Title="App"
+             xmlns:Controls="clr-namespace:TutorialListviewCell.Controls;assembly=TutorialListviewCell">
 <ContentPage.Content>
+
+  <StackLayout>
+    <Button Text="Register" Command="{Binding ButtonCommand}"></Button>
 		<ListView  x:Name="lstViewAnimal" RowHeight="90" IsPullToRefreshEnabled="True" >
+      <ListView.Header>
+          <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="10">
+            <Image Source="ic_list.png"/>
+            <Label Text="Animais" FontSize="21"/>
+          </StackLayout>
+      </ListView.Header>      
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<ViewCell>
@@ -24,5 +34,6 @@
 				</DataTemplate>
 			</ListView.ItemTemplate>
 		</ListView>
+  </StackLayout>
 	</ContentPage.Content>
 </ContentPage>
