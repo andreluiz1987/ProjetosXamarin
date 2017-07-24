@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeeLocker.View.ConfigurationPage" >
+  <ScrollView>
+    <StackLayout Padding="15" Orientation="Vertical" >
+      <StackLayout x:Name="stlClearData" >
+        <Label Text="Limpar dados" TextColor="#353535" FontSize="Medium"/>
+      </StackLayout>
+      <StackLayout Padding="0, 10, 0, 0" Orientation="Horizontal"> 
+        <Label Text="Contador de desbloqueios" TextColor="#353535" FontSize="Medium" />
+        <Label x:Name="ldlCount" Text="10" TextColor="#353535" FontSize="Medium"  
+           HorizontalOptions="EndAndExpand" />
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

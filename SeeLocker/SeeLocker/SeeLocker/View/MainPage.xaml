@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SeeLocker"
+             x:Class="SeeLocker.MainPage">
+
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Configurações" Clicked="Configurations_OnClick" Order="Secondary" />
+  </ContentPage.ToolbarItems>
+
+  <ContentPage.Content>
+    <Grid BackgroundColor="#D4D4D4" RowSpacing="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="50" />
+        <RowDefinition Height="50" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+
+      <StackLayout Padding="10,0,10,0" BackgroundColor="#FFFFFF" Grid.Row="0" Grid.Column="0" Orientation="Horizontal" VerticalOptions="FillAndExpand">
+        <Label Text="Filtro: " FontAttributes="Bold" VerticalOptions="CenterAndExpand" TextColor="Black" FontSize="Medium"></Label>
+        <Entry x:Name="etyInitialDate" Text="{Binding InitialDate}" HorizontalTextAlignment="Center"  Placeholder="Data inicial" WidthRequest="120" VerticalOptions="CenterAndExpand"></Entry>
+        <Entry x:Name="etyEndDate" Text="{Binding EndDate}" HorizontalTextAlignment="Center" Placeholder="Data final" WidthRequest="120"  VerticalOptions="CenterAndExpand"></Entry>
+      </StackLayout>
+
+      <Button Grid.Row="1" Grid.Column="0" BorderRadius="0" WidthRequest="150" BorderColor="Blue" TextColor="White" BackgroundColor="#1C7FCC"
+                           Text="BUSCAR" Command="{Binding ButtonCommand}"></Button>
+
+
+      <StackLayout Padding="10" BackgroundColor="#FFFFFF" Grid.Row="2" Grid.Column="0" Spacing="0" Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <Label Text="Relatório: " FontAttributes="Bold" VerticalOptions="Start" TextColor="Black" FontSize="Medium"></Label>
+        <ListView ItemsSource="{Binding ListItens, Mode=TwoWay}" x:Name="lstData" RowHeight="50" >
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Padding="10">
+                  <Image Source="ic_locker.png" HorizontalOptions="Start" />
+                  <StackLayout Orientation="Vertical" Padding="10,5,5,10">
+                    <Label Text = "{Binding LockDateString}" FontSize="15" FontAttributes="Bold" />
+                  </StackLayout>
+                </StackLayout>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+
+      </StackLayout>
+
+    </Grid>
+
+  </ContentPage.Content>
+</ContentPage>

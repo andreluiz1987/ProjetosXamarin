@@ -37,7 +37,7 @@ namespace TutorialService
                 }
             };
 
-            MainPage = new NavigationPage(content);
+            MainPage = new NavigationPage(new Page1());
         }
 
         private void StopService_Command(object sender, EventArgs e)

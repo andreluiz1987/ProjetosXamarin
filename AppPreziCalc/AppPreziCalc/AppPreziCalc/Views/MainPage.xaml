@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPreziCalc.Views.MainPage"
+             Title="PraziCalc"
+             BackgroundColor="White">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Equipe" Clicked="OnClickGeneral" Order="Secondary" />
+        <ToolbarItem Text="Sobre" Clicked="OnClickAbout" Order="Secondary" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Padding="20"  BackgroundColor="#FFF">
+            <Grid ColumnSpacing="0" RowSpacing="50">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="O medicamento praziquantel será administrado para:" FontSize="20" Grid.Row="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
+                <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" 
+                             HorizontalOptions="FillAndExpand" Padding="20">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding CalcPreziChildCommand}"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="ic_boy.png"></Image>
+                    <Label Text="Criança" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="FillAndExpand" 
+                             HorizontalOptions="FillAndExpand" Padding="20">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding CalcPreziAdultCommand}"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="ic_male.png"></Image>
+                    <Label Text="Adulto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
+                </StackLayout>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Configurações" Order="Secondary" />
+        <ToolbarItem Text="Sobre" Clicked="OnClickAbout" Order="Secondary" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid x:Name="controlGrid" RowSpacing="1" ColumnSpacing="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackLayout BackgroundColor="White" Grid.Row="0" Grid.Column="0"
+                         Padding="20" HorizontalOptions="Center" Orientation = "Vertical" >
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding CalcPreziChildCommand}"/>
+                </StackLayout.GestureRecognizers>
+                <Image Source="ic_boy.png"></Image>
+                <Label Text="CRIANÇA" HorizontalOptions="Center"></Label>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="White" Grid.Row="1" Grid.Column="0" Padding="20" HorizontalOptions="Center"  Orientation = "Vertical" >
+                <Image Source="ic_male.png"></Image>
+                <Label Text="ADULTO" HorizontalOptions="Center"></Label>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>-->
+</ContentPage>

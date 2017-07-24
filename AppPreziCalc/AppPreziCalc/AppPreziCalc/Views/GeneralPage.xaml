@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPreziCalc.Views.GeneralPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20, 10, 20, 10" Spacing="4" BackgroundColor="White">
+
+                <Label Text="Equipe:" TextColor="#454545"></Label>
+                <Label Text="Agostinho Gonçalves Viana" TextColor="#454545"></Label>
+                <Label Text="André Luiz Gomes Coelho" TextColor="#454545"></Label>
+                <Label Text="Pedro Henrique Gazzinelli Guimarães" TextColor="#454545"></Label>
+                <Label Text="Ricardo Toshio Fujiwara" TextColor="#454545"></Label>
+                <Label Text="Universidade Federal de Minas Gerais" TextColor="#454545" FontAttributes="Bold"></Label>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

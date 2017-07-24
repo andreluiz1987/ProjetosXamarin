@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:fab="clr-namespace:FAB.Forms;assembly=FAB.Forms"	
+             x:Class="TutorialService.Page1">
+<ContentPage.Content>
+		<RelativeLayout>
+			<StackLayout
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+				
+			</StackLayout>
+			<fab:FloatingActionButton
+				x:Name="fabBtn"
+				Source="icon.png"
+				Size="Normal"
+				RippleColor="Gray"
+				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-60}"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-60}" />
+		</RelativeLayout>
+	</ContentPage.Content>
+</ContentPage>
