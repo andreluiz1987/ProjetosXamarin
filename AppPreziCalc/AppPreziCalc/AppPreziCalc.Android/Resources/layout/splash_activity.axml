@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="PraeziCalc"
+        android:text="PraziCalc"
         android:textColor="#fff"
         android:textStyle="bold"
         android:textSize="30dp" />

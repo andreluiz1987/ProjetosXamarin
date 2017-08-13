@@ -22,7 +22,7 @@ namespace AppPreziCalc.Model
         {
             double numValue = 0;
 
-            if(numWeigth > 60 || enType == Type.ADULT)
+            if (numWeigth > 60 || enType == Type.ADULT)
             {
                 numValue = GetDosageAdult(numWeigth);
             }
@@ -38,7 +38,19 @@ namespace AppPreziCalc.Model
         {
             numWeigth = Math.Round(numWeigth);
 
-            if (numWeigth >= 13 && numWeigth <= 16)
+            if (numWeigth == 0)
+            {
+                return 0;
+            }
+            else if (numWeigth >= 1 && numWeigth <= 6)
+            {
+                return 0.5;
+            }
+            else if (numWeigth >= 7 && numWeigth <= 12)
+            {
+                return 1;
+            }
+            else if (numWeigth >= 13 && numWeigth <= 16)
             {
                 return 1;
             }
@@ -86,7 +98,27 @@ namespace AppPreziCalc.Model
         {
             numWeigth = Math.Round(numWeigth);
 
-            if (numWeigth >= 27 && numWeigth <= 32)
+            if (numWeigth ==0)
+            {
+                return 0;
+            }
+            else if (numWeigth >= 1 && numWeigth <= 8)
+            {
+                return 0.5;
+            }
+            else if (numWeigth >= 9 && numWeigth <= 14)
+            {
+                return 1;
+            }
+            else if (numWeigth >= 15 && numWeigth <= 20)
+            {
+                return 1.5;
+            }
+            else if (numWeigth >= 21 && numWeigth <= 26)
+            {
+                return 32;
+            }
+            else if(numWeigth >= 27 && numWeigth <= 32)
             {
                 return 2.5;
             }
