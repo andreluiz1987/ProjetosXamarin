@@ -14,7 +14,7 @@ namespace AppPreziCalc
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new IntroPage());
         }
 
         protected override void OnStart()

@@ -116,7 +116,7 @@ namespace AppPreziCalc.Model
             }
             else if (numWeigth >= 21 && numWeigth <= 26)
             {
-                return 32;
+                return 2;
             }
             else if(numWeigth >= 27 && numWeigth <= 32)
             {
@@ -157,6 +157,60 @@ namespace AppPreziCalc.Model
             else
             {
                 return 7;
+            }
+        }
+
+        private double GetDosageWHO(double numWeigth)
+        {
+            numWeigth = Math.Round(numWeigth);
+
+            if (numWeigth == 0)
+            {
+                return 0;
+            }
+            else if (numWeigth >= 1 && numWeigth <= 19)
+            {
+                return 1;
+            }
+            else if (numWeigth >= 20 && numWeigth <= 33)
+            {
+                return 1.5;
+            }
+            else if (numWeigth >= 15 && numWeigth <= 20)
+            {
+                return 2;
+            }
+            else if (numWeigth >= 34 && numWeigth <= 39)
+            {
+                return 2.5;
+            }
+            else if (numWeigth >= 40 && numWeigth <= 48)
+            {
+                return 3;
+            }
+            else if (numWeigth >= 49 && numWeigth <= 55)
+            {
+                return 3.5;
+            }
+            else if (numWeigth >= 56 && numWeigth <= 63)
+            {
+                return 5;
+            }
+            else if (numWeigth >= 64 && numWeigth <= 69)
+            {
+                return 4.5;
+            }
+            else if (numWeigth >= 70 && numWeigth <= 78)
+            {
+                return 5;
+            }
+            else if (numWeigth >= 79 && numWeigth <= 84)
+            {
+                return 5.5;
+            }
+            else
+            {
+                return 6;
             }
         }
     }

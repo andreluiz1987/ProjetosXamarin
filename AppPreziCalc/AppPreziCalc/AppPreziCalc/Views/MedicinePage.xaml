@@ -4,25 +4,6 @@
              x:Class="AppPreziCalc.Views.MedicinePage"
              BackgroundColor="#FFF">
     <ContentPage.Content>
-        <!--<StackLayout Orientation="Vertical" Padding="10, 10,10,15">
-            <StackLayout Orientation="Horizontal" BackgroundColor="#2DBCB5" Padding="20">
-                <Label Text="Informe o peso:" Font="Bold" VerticalOptions="Center" TextColor="White"></Label>
-                <Entry Text="{Binding Weigth_Text, Mode=TwoWay}" Keyboard="Numeric" HorizontalTextAlignment ="Center" FontSize="45"  VerticalOptions="Center" WidthRequest="120" TextColor="White"></Entry>
-                <Label Text="kg" VerticalOptions="Center"  Font="Bold" TextColor="White"></Label>
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal" Padding="20" BackgroundColor="#2DBCB5" IsVisible="{Binding VisiblePanel}" >
-                <Label Text="Recomendação: "  Font="Bold" VerticalOptions="Center" TextColor="White"></Label>
-                <Label Text="{Binding PreziResult_Text, Mode=TwoWay}" FontSize="30" VerticalOptions="Center" TextColor="White"></Label>
-                <Label Text=" comprimidos."  Font="Bold" VerticalOptions="Center" TextColor="White"></Label>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" >
-                <Button Text="{Binding btnText}" HorizontalOptions="FillAndExpand" HeightRequest="50"
-                        VerticalOptions="Start" Command="{Binding Prezi_Command}" 
-                        TextColor="White" BackgroundColor="#51B74C" BorderRadius="0" ></Button>
-            </StackLayout>
-
-        </StackLayout>-->
         <StackLayout>
 
             <StackLayout VerticalOptions="CenterAndExpand">
@@ -41,15 +22,15 @@
                 <StackLayout Orientation="Vertical" Padding="20" BackgroundColor="#ff5722" IsVisible="{Binding VisiblePanel}" >
                     <Label Text="Recomendação: "  Font="Bold" HorizontalOptions="CenterAndExpand" 
                            VerticalOptions="Center" FontSize="20" TextColor="White"></Label>
-                    <Label Text="8" FontSize="30" HorizontalOptions="CenterAndExpand" TextColor="White"></Label>
+                    <Label Text="{Binding PreziResult_Text, Mode=TwoWay}" FontSize="30" HorizontalOptions="CenterAndExpand" TextColor="White"></Label>
                     <Label Text=" comprimidos."  Font="Bold" HorizontalOptions="CenterAndExpand"
                            VerticalOptions="Center" TextColor="White"></Label>
                 </StackLayout>
             </StackLayout>
 
-            <StackLayout Orientation="Horizontal" VerticalOptions="End">
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
                 <!-- bottom controls -->
-                <Button Text="{Binding btnText}" HorizontalOptions="FillAndExpand" HeightRequest="50"
+                <Button Text="{Binding btnText}" HorizontalOptions="FillAndExpand" HeightRequest="70"
                         VerticalOptions="Start" Command="{Binding Prezi_Command}" 
                         TextColor="White" BackgroundColor="#51B74C" BorderRadius="0" ></Button>
             </StackLayout>
