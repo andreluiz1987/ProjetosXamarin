@@ -11,7 +11,8 @@ namespace AppPreziCalc.Model
         public enum Type
         {
             ADULT = 0,
-            CHILD
+            CHILD,
+            WHO
         }
 
         const int MILLI_GM_COMPRIMIDO = 600;
@@ -22,7 +23,11 @@ namespace AppPreziCalc.Model
         {
             double numValue = 0;
 
-            if (numWeigth > 60 || enType == Type.ADULT)
+            if (enType == Type.WHO)
+            {
+                numValue = GetDosageWHO(numWeigth);
+            }
+            else if (numWeigth > 60 || enType == Type.ADULT)
             {
                 numValue = GetDosageAdult(numWeigth);
             }
@@ -172,11 +177,11 @@ namespace AppPreziCalc.Model
             {
                 return 1;
             }
-            else if (numWeigth >= 20 && numWeigth <= 33)
+            else if (numWeigth >= 20 && numWeigth <= 25)
             {
                 return 1.5;
             }
-            else if (numWeigth >= 15 && numWeigth <= 20)
+            else if (numWeigth >= 26 && numWeigth <= 33)
             {
                 return 2;
             }
@@ -194,7 +199,7 @@ namespace AppPreziCalc.Model
             }
             else if (numWeigth >= 56 && numWeigth <= 63)
             {
-                return 5;
+                return 4;
             }
             else if (numWeigth >= 64 && numWeigth <= 69)
             {

@@ -15,8 +15,8 @@ namespace AppPreziCalc.ViewModel
 
         public IntroViewModel()
         {
-            WHOCommand = new Command(ExecuteBrasilCommand);
-            BrasilCommand = new Command(ExecuteWHOCommand);
+            WHOCommand = new Command(ExecuteWHOCommand);
+            BrasilCommand = new Command(ExecuteBrasilCommand);
         }
 
         private async void ExecuteBrasilCommand()
@@ -26,7 +26,7 @@ namespace AppPreziCalc.ViewModel
 
         private async void ExecuteWHOCommand()
         {
-            await PushAsync<MedicineViewModel>();
+            await PushAsync<MedicineViewModel>(CalcMedicine.Type.WHO);
         }
     }
 }

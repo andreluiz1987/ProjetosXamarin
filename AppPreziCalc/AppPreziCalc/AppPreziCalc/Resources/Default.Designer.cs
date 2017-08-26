@@ -62,11 +62,173 @@ namespace AppPreziCalc.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string About_Text {
+            get {
+                return ResourceManager.GetString("About_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Adult.
+        /// </summary>
+        internal static string Adult_Text {
+            get {
+                return ResourceManager.GetString("Adult_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning.
+        /// </summary>
+        internal static string Alert_Text {
+            get {
+                return ResourceManager.GetString("Alert_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calculate.
+        /// </summary>
+        internal static string Button_Calculate_Text {
+            get {
+                return ResourceManager.GetString("Button_Calculate_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clear.
+        /// </summary>
+        internal static string Button_Clear_Text {
+            get {
+                return ResourceManager.GetString("Button_Clear_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Child.
+        /// </summary>
+        internal static string Child_Text {
+            get {
+                return ResourceManager.GetString("Child_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Praziquantel will be administered by:.
+        /// </summary>
+        internal static string intro_praziquantel_info_text {
+            get {
+                return ResourceManager.GetString("intro_praziquantel_info_text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Praziquantel will be administered by:.
         /// </summary>
         internal static string intro_praziquantel_text {
             get {
                 return ResourceManager.GetString("intro_praziquantel_text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This app was developed with the purpose of facilitating the calculation of the quantity of tablets, praziquantel, that should be administered to the individual diagnosed with schistosomiasis..
+        /// </summary>
+        internal static string Message_Info1_Text {
+            get {
+                return ResourceManager.GetString("Message_Info1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Praziquantel is available in 600 mg tablets and given orally in a single dose of 40 mg/kg body weight and it is always given after a meal..
+        /// </summary>
+        internal static string Message_Info2_Text {
+            get {
+                return ResourceManager.GetString("Message_Info2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recommendadtion:.
+        /// </summary>
+        internal static string Message_Recommendadtion_Text {
+            get {
+                return ResourceManager.GetString("Message_Recommendadtion_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to tablets.
+        /// </summary>
+        internal static string Message_Recommendadtion2_Text {
+            get {
+                return ResourceManager.GetString("Message_Recommendadtion2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report weigth.
+        /// </summary>
+        internal static string Message_ReportWeight_Text {
+            get {
+                return ResourceManager.GetString("Message_ReportWeight_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report weigth..
+        /// </summary>
+        internal static string Message_WarningReportWeight_Text {
+            get {
+                return ResourceManager.GetString("Message_WarningReportWeight_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dosage (# tables).
+        /// </summary>
+        internal static string Table_Dosage_Text {
+            get {
+                return ResourceManager.GetString("Table_Dosage_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Table 1 - Treatment for children up to 15 years old (60 mg/kg).
+        /// </summary>
+        internal static string Table_info1_Text {
+            get {
+                return ResourceManager.GetString("Table_info1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Table 2 - Adult treatment (50 mg/kg.
+        /// </summary>
+        internal static string Table_info2_Text {
+            get {
+                return ResourceManager.GetString("Table_info2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to body weight (kg).
+        /// </summary>
+        internal static string Table_Weigth_Text {
+            get {
+                return ResourceManager.GetString("Table_Weigth_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Team.
+        /// </summary>
+        internal static string Team_Text {
+            get {
+                return ResourceManager.GetString("Team_Text", resourceCulture);
             }
         }
     }

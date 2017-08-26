@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		     xmlns:i18n="clr-namespace:AppPreziCalc.Views;assembly=AppPreziCalc"
              x:Class="AppPreziCalc.Views.MedicinePage"
              BackgroundColor="#FFF">
     <ContentPage.Content>
@@ -8,7 +9,7 @@
 
             <StackLayout VerticalOptions="CenterAndExpand">
                 <StackLayout Orientation="Vertical" BackgroundColor="#2DBCB5" Padding="20">
-                    <Label Text="Informe o peso:" Font="Bold" FontSize="30"  HorizontalOptions="Center" TextColor="White"></Label>
+                    <Label Text="{i18n:Translate Message_ReportWeight_Text}" Font="Bold" FontSize="30"  HorizontalOptions="Center" TextColor="White"></Label>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center" BackgroundColor="#2DBCB5" Padding="20">
                         <Entry Text="{Binding Weigth_Text, Mode=TwoWay}" 
                            Keyboard="Numeric" HorizontalTextAlignment ="Center" FontSize="45" VerticalOptions="Center"
@@ -20,10 +21,10 @@
 
                 <!-- middle controls -->
                 <StackLayout Orientation="Vertical" Padding="20" BackgroundColor="#ff5722" IsVisible="{Binding VisiblePanel}" >
-                    <Label Text="Recomendação: "  Font="Bold" HorizontalOptions="CenterAndExpand" 
+                    <Label Text="{i18n:Translate Message_Recommendadtion_Text}"  Font="Bold" HorizontalOptions="CenterAndExpand" 
                            VerticalOptions="Center" FontSize="20" TextColor="White"></Label>
                     <Label Text="{Binding PreziResult_Text, Mode=TwoWay}" FontSize="30" HorizontalOptions="CenterAndExpand" TextColor="White"></Label>
-                    <Label Text=" comprimidos."  Font="Bold" HorizontalOptions="CenterAndExpand"
+                    <Label Text="{i18n:Translate Message_Recommendadtion2_Text}"  Font="Bold" HorizontalOptions="CenterAndExpand"
                            VerticalOptions="Center" TextColor="White"></Label>
                 </StackLayout>
             </StackLayout>

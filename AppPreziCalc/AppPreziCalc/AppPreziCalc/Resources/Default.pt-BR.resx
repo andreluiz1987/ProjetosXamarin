@@ -120,4 +120,59 @@
   <data name="intro_praziquantel_text" xml:space="preserve">
     <value>Praziquantel deve ser para:</value>
   </data>
+  <data name="intro_praziquantel_info_text" xml:space="preserve">
+    <value>O medicamento praziquantel será administrado para:</value>
+  </data>
+  <data name="Message_ReportWeight_Text" xml:space="preserve">
+	    <value>Informe o peso:</value>
+	</data>
+  <data name="Button_Calculate_Text" xml:space="preserve">
+	    <value>Calcular</value>
+	</data>
+  <data name="Button_Clear_Text" xml:space="preserve">
+	    <value>Limpar</value>
+	</data>
+  <data name="Message_Recommendadtion_Text" xml:space="preserve">
+	    <value>Recomendação:</value>
+	</data>
+  <data name="Message_Recommendadtion2_Text" xml:space="preserve">
+	    <value> comprimidos.</value>
+	</data>
+  <data name="Message_Info1_Text" xml:space="preserve">
+	    <value>Este aplicativo foi desenvolvido com o objetivo de facilitar o cálculo da quantidade de comprimidos, praziquantel, que deve ser administrado ao indivíduo diagnosticado com esquistossomose.</value>
+	</data>
+  <data name="Message_Info2_Text" xml:space="preserve">
+	    <value>O praziquantel é apresentado em comprimidos de 600 mg e administrado por via oral, em dose única de 50 mg/kg de peso para adultos e de 60 mg/kg de peso para crianças, e é administrado, sempre, após uma refeição.</value>
+	</data>
+  <data name="Team_Text" xml:space="preserve">
+	    <value>Equipe</value>
+	</data>
+  <data name="About_Text" xml:space="preserve">
+	    <value>Sobre</value>
+	</data>
+  <data name="Alert_Text" xml:space="preserve">
+	    <value>Aviso</value>
+	</data>
+
+  <data name="Message_WarningReportWeight_Text" xml:space="preserve">
+	    <value>Informe o peso.</value>
+	</data>
+  <data name="Child_Text" xml:space="preserve">
+	    <value>Criança</value>
+	</data>
+  <data name="Adult_Text" xml:space="preserve">
+	    <value>Adulto</value>
+	</data>
+  <data name="Table_Weigth_Text" xml:space="preserve">
+	    <value>Peso corporal (kg)</value>
+	</data>
+  <data name="Table_Dosage_Text" xml:space="preserve">
+	    <value>Dosage (nº comp)</value>
+	</data>
+  <data name="Table_info2_Text" xml:space="preserve">
+	    <value>Tabela 2 - Tratamento para adultosde  (50 mg/kg)</value>
+	</data>
+  <data name="Table_info1_Text" xml:space="preserve">
+	    <value>Tabela 1 - Tratamento para crianças de até 15 anos (60 mg/kg)</value>
+	</data>
 </root>

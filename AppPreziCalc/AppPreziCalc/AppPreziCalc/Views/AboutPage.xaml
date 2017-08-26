@@ -2,13 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppPreziCalc.Views.AboutPage"
-             Title="Sobre">
+		     xmlns:i18n="clr-namespace:AppPreziCalc.Views;assembly=AppPreziCalc"
+             Title="{i18n:Translate About_Text}">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="20, 10, 20, 10" Spacing="30" BackgroundColor="White">
                 <StackLayout>
-                    <Label Text="Este aplicativo foi desenvolvido com o objetivo de facilitar o cálculo da quantidade de comprimidos, praziquantel, que deve ser administrado ao indivíduo diagnosticado com esquistossomose." TextColor="#454545"></Label>
-                    <Label Text="O praziquantel é apresentado em comprimidos de 600 mg e administrado por via oral, em dose única de 50 mg/kg de peso para adultos e de 60 mg/kg de peso para crianças, e é administrado, sempre, após uma refeição." TextColor="#454545"></Label>
+                    <Label Text="{i18n:Translate Message_Info1_Text}" TextColor="#454545"></Label>
+                    <Label Text="{i18n:Translate Message_Info2_Text}" TextColor="#454545"></Label>
                 </StackLayout>
 
                 <Grid ColumnSpacing="0" RowSpacing="0">
@@ -23,10 +24,10 @@
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Label Text="Tabela 1 – Tratamento para criança de até 15 anos (60 mg/Kg)" TextColor="#454545" Grid.Row="0" Grid.ColumnSpan="2" HeightRequest="40"></Label>
-                    <Label Text="Peso corporal (kg)" HeightRequest="35" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  BackgroundColor="#DEC7AC" FontAttributes="Bold" TextColor="#454545" ></Label>
-                    <Label Text="Dosagem (nº comp)" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" BackgroundColor="#DEC7AC" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
+                    </Grid.ColumnDefinitions> 
+                    <Label Text="{i18n:Translate Table_info1_Text}" TextColor="#454545" Grid.Row="0" Grid.ColumnSpan="2" HeightRequest="40"></Label>
+                    <Label Text="{i18n:Translate Table_Weigth_Text}" HeightRequest="35" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  BackgroundColor="#DEC7AC" FontAttributes="Bold" TextColor="#454545" ></Label>
+                    <Label Text="{i18n:Translate Table_Dosage_Text}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" BackgroundColor="#DEC7AC" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
 
                     <Label Text="13 - 16" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" BackgroundColor="#EDE1D1" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
                     <Label Text="1,5" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" BackgroundColor="#EDE1D1" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
@@ -73,9 +74,9 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Label Text="Tabela 2 – Tratamento para adulto (50 mg/Kg)" TextColor="#454545" Grid.Row="0" Grid.ColumnSpan="2" HeightRequest="40"></Label>
-                    <Label Text="Peso corporal (kg)" HeightRequest="35" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  BackgroundColor="#DEC7AC" FontAttributes="Bold" TextColor="#454545" ></Label>
-                    <Label Text="Dosagem (nº comp)" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" BackgroundColor="#DEC7AC" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
+                    <Label Text="{i18n:Translate Table_info2_Text}" TextColor="#454545" Grid.Row="0" Grid.ColumnSpan="2" HeightRequest="40"></Label>
+                    <Label Text="{i18n:Translate Table_Weigth_Text}" HeightRequest="35" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  BackgroundColor="#DEC7AC" FontAttributes="Bold" TextColor="#454545" ></Label>
+                    <Label Text="{i18n:Translate Table_Dosage_Text}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" BackgroundColor="#DEC7AC" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
 
                     <Label Text="27 - 32" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" BackgroundColor="#EDE1D1" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
                     <Label Text="2,5" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" BackgroundColor="#EDE1D1" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>

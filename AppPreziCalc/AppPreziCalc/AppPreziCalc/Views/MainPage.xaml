@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppPreziCalc.Views.MainPage"
+		     xmlns:i18n="clr-namespace:AppPreziCalc.Views;assembly=AppPreziCalc"
              Title="PraziCalc"
              BackgroundColor="White">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Equipe" Clicked="OnClickGeneral" Order="Secondary" />
-        <ToolbarItem Text="Sobre" Clicked="OnClickAbout" Order="Secondary" />
+        <ToolbarItem Text="{i18n:Translate Team_Text}" Clicked="OnClickGeneral" Order="Secondary" />
+        <ToolbarItem Text="{i18n:Translate About_Text}" Clicked="OnClickAbout" Order="Secondary" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Padding="20"  BackgroundColor="#FFF">
@@ -19,14 +20,14 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Label Text="O medicamento praziquantel será administrado para:" FontSize="20" Grid.Row="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
+                <Label Text="{i18n:Translate intro_praziquantel_info_text}" FontSize="20" Grid.Row="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
                 <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" 
                              HorizontalOptions="FillAndExpand" Padding="20">
                     <StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding CalcPreziChildCommand}"/>
                     </StackLayout.GestureRecognizers>
                     <Image Source="ic_boy.png"></Image>
-                    <Label Text="Criança" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
+                    <Label Text="{i18n:Translate Child_Text}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
                 </StackLayout>
                 <StackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="FillAndExpand" 
                              HorizontalOptions="FillAndExpand" Padding="20">
@@ -34,7 +35,7 @@
                         <TapGestureRecognizer Command="{Binding CalcPreziAdultCommand}"/>
                     </StackLayout.GestureRecognizers>
                     <Image Source="ic_male.png"></Image>
-                    <Label Text="Adulto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
+                    <Label Text="{i18n:Translate Adult_Text}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="#454545"></Label>
                 </StackLayout>
 
             </Grid>

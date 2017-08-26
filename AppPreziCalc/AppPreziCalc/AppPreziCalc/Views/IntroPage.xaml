@@ -5,8 +5,8 @@
 		     xmlns:i18n="clr-namespace:AppPreziCalc.Views;assembly=AppPreziCalc"
              x:Class="AppPreziCalc.Views.IntroPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Equipe" Clicked="OnClickGeneral" Order="Secondary" />
-        <ToolbarItem Text="Sobre" Clicked="OnClickAbout" Order="Secondary" />
+        <ToolbarItem Text="{i18n:Translate Team_Text}" Clicked="OnClickGeneral" Order="Secondary" />
+        <ToolbarItem Text="{i18n:Translate About_Text}" Clicked="OnClickAbout" Order="Secondary" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Padding="20"  BackgroundColor="#FFF">
@@ -23,7 +23,7 @@
                        HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"
                        TextColor="#454545"></Label>
                 <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" 
-                             HorizontalOptions="FillAndExpand" Padding="20, 60, 20, 20">
+                             HorizontalOptions="FillAndExpand" Padding="20, 55, 20, 20">
                     <StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding WHOCommand}"/>
                     </StackLayout.GestureRecognizers>

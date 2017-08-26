@@ -119,5 +119,60 @@
   </resheader>
   <data name="intro_praziquantel_text" xml:space="preserve">
     <value>Praziquantel will be administered by:</value>
+  </data>  
+  <data name="intro_praziquantel_info_text" xml:space="preserve">
+    <value>Praziquantel will be administered by:</value>
   </data>
+  <data name="Message_ReportWeight_Text" xml:space="preserve">
+	    <value>Report weigth</value>
+	</data>
+  <data name="Button_Calculate_Text" xml:space="preserve">
+	    <value>Calculate</value>
+	</data>
+  <data name="Button_Clear_Text" xml:space="preserve">
+	    <value>Clear</value>
+	</data>
+  <data name="Message_Recommendadtion_Text" xml:space="preserve">
+	    <value>Recommendadtion:</value>
+	</data>
+  <data name="Message_Recommendadtion2_Text" xml:space="preserve">
+	    <value>tablets</value>
+	</data>
+  <data name="Message_Info1_Text" xml:space="preserve">
+	    <value>This app was developed with the purpose of facilitating the calculation of the quantity of tablets, praziquantel, that should be administered to the individual diagnosed with schistosomiasis.</value>
+	</data>
+  <data name="Message_Info2_Text" xml:space="preserve">
+	    <value>Praziquantel is available in 600 mg tablets and given orally in a single dose of 40 mg/kg body weight and it is always given after a meal.</value>
+	</data>
+
+  <data name="Team_Text" xml:space="preserve">
+	    <value>Team</value>
+	</data>
+  <data name="Alert_Text" xml:space="preserve">
+	    <value>Warning</value>
+	</data>
+    <data name="Message_WarningReportWeight_Text" xml:space="preserve">
+	    <value>Report weigth.</value>
+	</data>
+  <data name="Child_Text" xml:space="preserve">
+	    <value>Child</value>
+	</data>
+  <data name="Adult_Text" xml:space="preserve">
+	    <value>Adult</value>
+	</data>
+  <data name="About_Text" xml:space="preserve">
+	    <value>About</value>
+	</data>
+  <data name="Table_Weigth_Text" xml:space="preserve">
+	    <value>body weight (kg)</value>
+	</data>
+  <data name="Table_Dosage_Text" xml:space="preserve">
+	    <value>Dosage (# tables)</value>
+	</data>
+  <data name="Table_info1_Text" xml:space="preserve">
+	    <value>Table 1 - Treatment for children up to 15 years old (60 mg/kg)</value>
+	</data>
+  <data name="Table_info2_Text" xml:space="preserve">
+	    <value>Table 2 - Adult treatment (50 mg/kg</value>
+	</data>
 </root>
