@@ -119,60 +119,68 @@
   </resheader>
   <data name="intro_praziquantel_text" xml:space="preserve">
     <value>Praziquantel will be administered by:</value>
-  </data>  
+  </data>
   <data name="intro_praziquantel_info_text" xml:space="preserve">
     <value>Praziquantel will be administered by:</value>
   </data>
   <data name="Message_ReportWeight_Text" xml:space="preserve">
-	    <value>Report weigth</value>
-	</data>
+    <value>Report weigth</value>
+  </data>
   <data name="Button_Calculate_Text" xml:space="preserve">
-	    <value>Calculate</value>
-	</data>
+    <value>Calculate</value>
+  </data>
   <data name="Button_Clear_Text" xml:space="preserve">
-	    <value>Clear</value>
-	</data>
+    <value>Clear</value>
+  </data>
   <data name="Message_Recommendadtion_Text" xml:space="preserve">
-	    <value>Recommendadtion:</value>
-	</data>
+    <value>Recommendation:</value>
+  </data>
   <data name="Message_Recommendadtion2_Text" xml:space="preserve">
-	    <value>tablets</value>
-	</data>
+    <value>tablets</value>
+  </data>
   <data name="Message_Info1_Text" xml:space="preserve">
-	    <value>This app was developed with the purpose of facilitating the calculation of the quantity of tablets, praziquantel, that should be administered to the individual diagnosed with schistosomiasis.</value>
-	</data>
+    <value>This app was developed with purpose of facilitating the calculation of the quantity of tablets, praziquantel, that should be administered to the individual diagnosed with schistosomiasis.</value>
+  </data>
   <data name="Message_Info2_Text" xml:space="preserve">
-	    <value>Praziquantel is available in 600 mg tablets and given orally in a single dose of 40 mg/kg body weight and it is always given after a meal.</value>
-	</data>
-
+    <value>According World Health Organization, praziquantel is available in 600 mg tablets and given orally in a single dose of 40 mg/kg body weight and it is always given after a meal.</value>
+  </data>
+  <data name="Message_Info3_Text" xml:space="preserve">
+    <value>In Brazil, Ministry of health has its own guideline. Praziquantel is given according to the age group (child or adult) and body weight of the individual. The drug praziquantel is presented as 600 mg tablets and given orally in a single dose of 50 mg/kg in adults and 60 mg/kg in children after a meal.</value>
+  </data>
+  <data name="Message_Info4_Text" xml:space="preserve">
+    <value>These tables below are available in the guidelines of the Ministry of health in Brazil called "Brazil, Ministério da saúde. Vigilância da esquistossomose mansoni – Diretrizes técnicas, 4 ed, 2014".</value>
+  </data>
   <data name="Team_Text" xml:space="preserve">
-	    <value>Team</value>
-	</data>
+    <value>Team</value>
+  </data>
   <data name="Alert_Text" xml:space="preserve">
-	    <value>Warning</value>
-	</data>
-    <data name="Message_WarningReportWeight_Text" xml:space="preserve">
-	    <value>Report weigth.</value>
-	</data>
+    <value>Warning</value>
+  </data>
+  <data name="Message_WarningReportWeight_Text" xml:space="preserve">
+    <value>Report weigth.</value>
+  </data>
   <data name="Child_Text" xml:space="preserve">
-	    <value>Child</value>
-	</data>
+    <value>Child</value>
+  </data>
   <data name="Adult_Text" xml:space="preserve">
-	    <value>Adult</value>
-	</data>
+    <value>Adult</value>
+  </data>
   <data name="About_Text" xml:space="preserve">
-	    <value>About</value>
-	</data>
+    <value>About</value>
+  </data>
   <data name="Table_Weigth_Text" xml:space="preserve">
-	    <value>body weight (kg)</value>
-	</data>
+    <value>Body weight (kg)</value>
+  </data>
   <data name="Table_Dosage_Text" xml:space="preserve">
-	    <value>Dosage (# tables)</value>
-	</data>
+    <value>Dosage (# tablet)</value>
+  </data>
   <data name="Table_info1_Text" xml:space="preserve">
-	    <value>Table 1 - Treatment for children up to 15 years old (60 mg/kg)</value>
-	</data>
+    <value>Table 1 - Treatment for children up to 15 years old (60 mg/kg)</value>
+  </data>
   <data name="Table_info2_Text" xml:space="preserve">
-	    <value>Table 2 - Adult treatment (50 mg/kg</value>
-	</data>
+    <value>Table 2 - Treatment for adult (50 mg/kg)</value>
+  </data>
+  <data name="Team_Developer_Text" xml:space="preserve">
+    <value>This app was developed by:</value>
+  </data>
 </root>

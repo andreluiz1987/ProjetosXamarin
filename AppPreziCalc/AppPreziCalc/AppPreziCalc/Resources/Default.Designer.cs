@@ -134,7 +134,7 @@ namespace AppPreziCalc.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This app was developed with the purpose of facilitating the calculation of the quantity of tablets, praziquantel, that should be administered to the individual diagnosed with schistosomiasis..
+        ///   Looks up a localized string similar to This app was developed with purpose of facilitating the calculation of the quantity of tablets, praziquantel, that should be administered to the individual diagnosed with schistosomiasis..
         /// </summary>
         internal static string Message_Info1_Text {
             get {
@@ -143,7 +143,7 @@ namespace AppPreziCalc.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Praziquantel is available in 600 mg tablets and given orally in a single dose of 40 mg/kg body weight and it is always given after a meal..
+        ///   Looks up a localized string similar to According World Health Organization, praziquantel is available in 600 mg tablets and given orally in a single dose of 40 mg/kg body weight and it is always given after a meal..
         /// </summary>
         internal static string Message_Info2_Text {
             get {
@@ -152,7 +152,25 @@ namespace AppPreziCalc.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Recommendadtion:.
+        ///   Looks up a localized string similar to In Brazil, Ministry of health has its own guideline. Praziquantel is given according to the age group (child or adult) and body weight of the individual. The drug praziquantel is presented as 600 mg tablets and given orally in a single dose of 50 mg/kg in adults and 60 mg/kg in children after a meal..
+        /// </summary>
+        internal static string Message_Info3_Text {
+            get {
+                return ResourceManager.GetString("Message_Info3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These tables below are available in the guidelines of the Ministry of health in Brazil called &quot;Brazil, Ministério da saúde. Vigilância da esquistossomose mansoni – Diretrizes técnicas, 4 ed, 2014&quot;..
+        /// </summary>
+        internal static string Message_Info4_Text {
+            get {
+                return ResourceManager.GetString("Message_Info4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recommendation:.
         /// </summary>
         internal static string Message_Recommendadtion_Text {
             get {
@@ -188,7 +206,7 @@ namespace AppPreziCalc.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dosage (# tables).
+        ///   Looks up a localized string similar to Dosage (# tablet).
         /// </summary>
         internal static string Table_Dosage_Text {
             get {
@@ -206,7 +224,7 @@ namespace AppPreziCalc.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Table 2 - Adult treatment (50 mg/kg.
+        ///   Looks up a localized string similar to Table 2 - Treatment for adult (50 mg/kg).
         /// </summary>
         internal static string Table_info2_Text {
             get {
@@ -215,11 +233,20 @@ namespace AppPreziCalc.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to body weight (kg).
+        ///   Looks up a localized string similar to Body weight (kg).
         /// </summary>
         internal static string Table_Weigth_Text {
             get {
                 return ResourceManager.GetString("Table_Weigth_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This app was developed by:.
+        /// </summary>
+        internal static string Team_Developer_Text {
+            get {
+                return ResourceManager.GetString("Team_Developer_Text", resourceCulture);
             }
         }
         

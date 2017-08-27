@@ -10,6 +10,8 @@
                 <StackLayout>
                     <Label Text="{i18n:Translate Message_Info1_Text}" TextColor="#454545"></Label>
                     <Label Text="{i18n:Translate Message_Info2_Text}" TextColor="#454545"></Label>
+                    <Label Text="{i18n:Translate Message_Info3_Text}" TextColor="#454545"></Label>
+                    <Label Text="{i18n:Translate Message_Info4_Text}" TextColor="#454545"></Label>
                 </StackLayout>
 
                 <Grid ColumnSpacing="0" RowSpacing="0">

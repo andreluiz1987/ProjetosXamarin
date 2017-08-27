@@ -118,61 +118,69 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="intro_praziquantel_text" xml:space="preserve">
-    <value>Praziquantel deve ser para:</value>
+    <value>Praziquantel será administrado pelo:</value>
   </data>
   <data name="intro_praziquantel_info_text" xml:space="preserve">
     <value>O medicamento praziquantel será administrado para:</value>
   </data>
   <data name="Message_ReportWeight_Text" xml:space="preserve">
-	    <value>Informe o peso:</value>
-	</data>
+    <value>Informe o peso:</value>
+  </data>
   <data name="Button_Calculate_Text" xml:space="preserve">
-	    <value>Calcular</value>
-	</data>
+    <value>Calcular</value>
+  </data>
   <data name="Button_Clear_Text" xml:space="preserve">
-	    <value>Limpar</value>
-	</data>
+    <value>Limpar</value>
+  </data>
   <data name="Message_Recommendadtion_Text" xml:space="preserve">
-	    <value>Recomendação:</value>
-	</data>
+    <value>Recomendação:</value>
+  </data>
   <data name="Message_Recommendadtion2_Text" xml:space="preserve">
-	    <value> comprimidos.</value>
-	</data>
+    <value> comprimidos.</value>
+  </data>
   <data name="Message_Info1_Text" xml:space="preserve">
-	    <value>Este aplicativo foi desenvolvido com o objetivo de facilitar o cálculo da quantidade de comprimidos, praziquantel, que deve ser administrado ao indivíduo diagnosticado com esquistossomose.</value>
-	</data>
+    <value>Este aplicativo foi desenvolvido com o objetivo de facilitar o cálculo da quantidade de comprimidos, praziquantel, que deve ser administrado ao indivíduo diagnosticado com esquistossomose.</value>
+  </data>
   <data name="Message_Info2_Text" xml:space="preserve">
-	    <value>O praziquantel é apresentado em comprimidos de 600 mg e administrado por via oral, em dose única de 50 mg/kg de peso para adultos e de 60 mg/kg de peso para crianças, e é administrado, sempre, após uma refeição.</value>
-	</data>
+    <value>De acordo com a Organização Mundial de Saúde (WHO), o praziquantel é disponível em comprimidos de 600 mg e administrado por via oral em dose única de 40 mg/kg de peso corporal e administrado após a refeição.</value>
+  </data>
+  <data name="Message_Info3_Text" xml:space="preserve">
+    <value>No Brasil, o ministério da saúde tem sua própria diretriz. O praziquantel é administrado de acordo com a faixa etária (criança ou adulto) e peso corporal do indivíduo. O medicamento, praziquantel, é apresentado em comprimidos de 600 mg e administrado por via oral em dose única de 50 mg/kg em adultos e 60 mg/kg em criança após a refeição.</value>
+  </data>
+  <data name="Message_Info4_Text" xml:space="preserve">
+    <value>Estas tabelas abaixo estão disponíveis no manual do ministério da saúde chamado "Brasil, Ministério da saúde. Vigilância da esquistossomose mansoni – Diretrizes técnicas, 4 ed, 2014".</value>
+  </data>
   <data name="Team_Text" xml:space="preserve">
-	    <value>Equipe</value>
-	</data>
+    <value>Equipe</value>
+  </data>
   <data name="About_Text" xml:space="preserve">
-	    <value>Sobre</value>
-	</data>
+    <value>Sobre</value>
+  </data>
   <data name="Alert_Text" xml:space="preserve">
-	    <value>Aviso</value>
-	</data>
-
+    <value>Aviso</value>
+  </data>
   <data name="Message_WarningReportWeight_Text" xml:space="preserve">
-	    <value>Informe o peso.</value>
-	</data>
+    <value>Informe o peso.</value>
+  </data>
   <data name="Child_Text" xml:space="preserve">
-	    <value>Criança</value>
-	</data>
+    <value>Criança</value>
+  </data>
   <data name="Adult_Text" xml:space="preserve">
-	    <value>Adulto</value>
-	</data>
+    <value>Adulto</value>
+  </data>
   <data name="Table_Weigth_Text" xml:space="preserve">
-	    <value>Peso corporal (kg)</value>
-	</data>
+    <value>Peso corporal (kg)</value>
+  </data>
   <data name="Table_Dosage_Text" xml:space="preserve">
-	    <value>Dosage (nº comp)</value>
-	</data>
+    <value>Dosage (nº comp)</value>
+  </data>
   <data name="Table_info2_Text" xml:space="preserve">
-	    <value>Tabela 2 - Tratamento para adultosde  (50 mg/kg)</value>
-	</data>
+    <value>Tabela 2 - Tratamento para adultosde  (50 mg/kg)</value>
+  </data>
   <data name="Table_info1_Text" xml:space="preserve">
-	    <value>Tabela 1 - Tratamento para crianças de até 15 anos (60 mg/kg)</value>
-	</data>
+    <value>Tabela 1 - Tratamento para crianças de até 15 anos (60 mg/kg)</value>
+  </data>
+  <data name="Team_Developer_Text" xml:space="preserve">
+    <value>Este aplicativo foi desenvolvido por:</value>
+  </data>
 </root>
